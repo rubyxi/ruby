@@ -20,15 +20,15 @@ ENABLE_COP     = 0
 ENABLE_TOAU    = 0
 ENABLE_WOTG    = 0
 ENABLE_ACP     = 0
-ENABLE_AMK     = 0
-ENABLE_ASA     = 0
-ENABLE_ABYSSEA = 0
-ENABLE_SOA     = 0
-ENABLE_ROV     = 0
-ENABLE_VOIDWATCH = 0 -- Not an expansion, but has its own storyline.
+ENABLE_AMK     = 1
+ENABLE_ASA     = 1
+ENABLE_ABYSSEA = 1
+ENABLE_SOA     = 1
+ENABLE_ROV     = 1
+ENABLE_VOIDWATCH = 1 -- Not an expansion, but has its own storyline.
 
 -- FIELDS OF VALOR/Grounds of Valor settings
-ENABLE_FIELD_MANUALS  = 1 -- Enables Fields of Valor
+ENABLE_FIELD_MANUALS  = 0 -- Enables Fields of Valor
 ENABLE_GROUNDS_TOMES  = 1 -- Enables Grounds of Valor
 REGIME_WAIT = 1 -- Make people wait till 00:00 game time as in retail. If it's 0, there is no wait time.
 
@@ -46,7 +46,7 @@ RESTRICT_CONTENT = 0
 
 -- CHARACTER CONFIG
 INITIAL_LEVEL_CAP = 50 -- The initial level cap for new players.  There seems to be a hardcap of 255.
-MAX_LEVEL = 99 -- Level max of the server, lowers the attainable cap by disabling Limit Break quests.
+MAX_LEVEL = 75 -- Level max of the server, lowers the attainable cap by disabling Limit Break quests.
 NORMAL_MOB_MAX_LEVEL_RANGE_MIN = 0 -- Lower Bound of Max Level Range for Normal Mobs (0 = Uncapped)
 NORMAL_MOB_MAX_LEVEL_RANGE_MAX = 0 -- Upper Bound of Max Level Range for Normal Mobs (0 = Uncapped)
 START_GIL = 10 -- Amount of gil given to newly created characters.
@@ -65,13 +65,13 @@ TABS_RATE       = 1.000 -- Multiplies tabs earned from fov.
 CURE_POWER      = 1.000 -- Multiplies amount healed from Healing Magic, including the relevant Blue Magic.
 ELEMENTAL_POWER = 1.000 -- Multiplies damage dealt by Elemental and non-drain Dark Magic.
 DIVINE_POWER    = 1.000 -- Multiplies damage dealt by Divine Magic.
-NINJUTSU_POWER  = 1.000 -- Multiplies damage dealt by Ninjutsu Magic.
-BLUE_POWER      = 1.000 -- Multiplies damage dealt by Blue Magic.
+NINJUTSU_POWER  = 1.500 -- Multiplies damage dealt by Ninjutsu Magic.
+BLUE_POWER      = 1.250 -- Multiplies damage dealt by Blue Magic.
 DARK_POWER      = 1.000 -- Multiplies amount drained by Dark Magic.
 ITEM_POWER      = 1.000 -- Multiplies the effect of items such as Potions and Ethers.
 WEAPON_SKILL_POWER  = 1.000 -- Multiplies damage dealt by Weapon Skills.
 WEAPON_SKILL_POINTS = 1.000 -- Multiplies points earned during weapon unlocking.
-USE_ADOULIN_WEAPON_SKILL_CHANGES = false -- true/false. Change to toggle new Adoulin weapon skill damage calculations
+USE_ADOULIN_WEAPON_SKILL_CHANGES = true -- true/false. Change to toggle new Adoulin weapon skill damage calculations
 
 HARVESTING_BREAK_CHANCE = 33 -- % chance for the sickle to break during harvesting.  Set between 0 and 100.
 EXCAVATION_BREAK_CHANCE = 33 -- % chance for the pickaxe to break during excavation.  Set between 0 and 100.
@@ -94,8 +94,8 @@ CHEST_MIN_ILLUSION_TIME  = 1800  -- 30 minutes
 
 -- Sets spawn type for: Behemoth, Fafnir, Adamantoise, King Behemoth, Nidhog, Aspidochelone.
 -- Use 0 for timed spawns, 1 for force pop only, 2 for both
-LandKingSystem_NQ = 1
-LandKingSystem_HQ = 1
+LandKingSystem_NQ = 0
+LandKingSystem_HQ = 2
 
 -- DYNAMIS SETTINGS
     BETWEEN_2DYNA_WAIT_TIME = 24       -- Hours before player can re-enter Dynamis. Default is 1 Earthday (24 hours).
@@ -112,9 +112,9 @@ FREE_COP_DYNAMIS = 0  -- Authorize player to entering inside COP Dynamis without
 AF1_QUEST_LEVEL = 40 -- Minimum level to start AF1 quest
 AF2_QUEST_LEVEL = 50 -- Minimum level to start AF2 quest
 AF3_QUEST_LEVEL = 50 -- Minimum level to start AF3 quest
-OldSchoolG1 = false -- Set to true to require farming Exoray Mold, Bombd Coal, and Ancient Papyrus drops instead of allowing key item method.
-OldSchoolG2 = false -- Set true to require the NMs for "Atop the Highest Mountains" be dead to get KI like before SE changed it.
-FrigiciteDuration = 30 -- When OldSChoolG2 is enabled, this is the time (in seconds) you have from killing Boreal NMs to click the "???" target.
+OldSchoolG1 = true -- Set to true to require farming Exoray Mold, Bombd Coal, and Ancient Papyrus drops instead of allowing key item method.
+OldSchoolG2 = true -- Set true to require the NMs for "Atop the Highest Mountains" be dead to get KI like before SE changed it.
+FrigiciteDuration = 60 -- When OldSChoolG2 is enabled, this is the time (in seconds) you have from killing Boreal NMs to click the "???" target.
 
 -- SPELL SPECIFIC SETTINGS
 DIA_OVERWRITE = 1 --Set to 1 to allow Bio to overwrite same tier Dia.  Default is 1.
@@ -139,7 +139,7 @@ HALLOWEEN_YEAR_ROUND = 0 -- Set to 1 to have Harvest Festival initialize outside
 HOMEPOINT_HEAL = 0 --Set to 1 if you want Home Points to heal you like in single-player Final Fantasy games.
 RIVERNE_PORTERS = 120 -- Time in seconds that Unstable Displacements in Cape Riverne stay open after trading a scale.
 LANTERNS_STAY_LIT = 1200 -- time in seconds that lanterns in the Den of Rancor stay lit.
-ENABLE_COP_ZONE_CAP = 1 -- enable or disable lvl cap
+ENABLE_COP_ZONE_CAP = 0 -- enable or disable lvl cap
 TIMEZONE_OFFSET = 9.0 -- Offset from UTC used to determine when "JP Midnight" is for the server.  Default is JST (+9.0).
 ALLOW_MULTIPLE_EXP_RINGS = 0 -- Set to 1 to remove ownership restrictions on the Chariot/Empress/Emperor Band trio.
 BYPASS_EXP_RING_ONE_PER_WEEK = 0 -- -- Set to 1 to bypass the limit of one ring per Conquest Tally Week.
