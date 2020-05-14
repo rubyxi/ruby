@@ -20,8 +20,8 @@ ENABLE_COP     = 1
 ENABLE_TOAU    = 1
 ENABLE_WOTG    = 1
 ENABLE_ACP     = 1
-ENABLE_AMK     = 0
-ENABLE_ASA     = 0
+ENABLE_AMK     = 1
+ENABLE_ASA     = 1
 ENABLE_ABYSSEA = 0
 ENABLE_SOA     = 0
 ENABLE_ROV     = 0
@@ -133,7 +133,7 @@ USE_OLD_MAGIC_DAMAGE = false -- true/false. if true, uses older magic damage for
 
 -- CELEBRATIONS
 EXPLORER_MOOGLE_LV = 10 -- Enables Explorer Moogle teleports and sets required level. Zero to disable.
-HALLOWEEN_2005 = 0 -- Set to 1 to Enable the 2005 version of Harvest Festival, will start on Oct. 20 and end Nov. 1.
+HALLOWEEN_2005 = 1 -- Set to 1 to Enable the 2005 version of Harvest Festival, will start on Oct. 20 and end Nov. 1.
 HALLOWEEN_YEAR_ROUND = 0 -- Set to 1 to have Harvest Festival initialize outside of normal times.
 
 -- MISC
