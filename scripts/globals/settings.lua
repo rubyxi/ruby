@@ -95,7 +95,7 @@ CHEST_MIN_ILLUSION_TIME  = 1800  -- 30 minutes
 -- Sets spawn type for: Behemoth, Fafnir, Adamantoise, King Behemoth, Nidhog, Aspidochelone.
 -- Use 0 for timed spawns, 1 for force pop only, 2 for both
 LandKingSystem_NQ = 0
-LandKingSystem_HQ = 2
+LandKingSystem_HQ = 1
 
 -- DYNAMIS SETTINGS
     BETWEEN_2DYNA_WAIT_TIME = 24       -- Hours before player can re-enter Dynamis. Default is 1 Earthday (24 hours).
